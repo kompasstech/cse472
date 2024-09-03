@@ -14,7 +14,7 @@
 
 
 // $sql = "CREATE database seu_cse";
-
+/*
 $sql2 ="CREATE table seucse (
 id int not null auto_increment, 
 names varchar(20), 
@@ -30,6 +30,7 @@ if ($res == TRUE)
    echo "<br>New Table Created";
 else 
   echo "<br> Database Not Created";
+*/
 
 
 /*
