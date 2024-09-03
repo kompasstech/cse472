@@ -31,19 +31,40 @@ if ($res == TRUE)
 else 
   echo "<br> Database Not Created";
 
- $SQLin = "INSERT INTO seucse (names,sage,addr,bg) VALUES ('Mued', 20,'Dhaka','A+')"; 
- $con->query($SQLin); 
 
+/*
+$name = "Debosree"; //POST
+$age = 19; // POST
+$add = "Chittagong"; // POST 
+$bg = "A+"; // POST
 
+ $SQLin = "INSERT INTO seucse (names,sage,addr,bg) VALUES ('".$name."',".$age.",'".$add."','".$bg."')";              
+ $res=$con->query($SQLin);
+
+ if ($res == TRUE)
+  echo "<br>New record added successfully<br>";
+else 
+  echo "<br> Error: ". $SQLin. "<br>". $con->error;
+*/
+
+// Read the Data 
+ $SQLse = "SELECT * FROM seucse";
+ $res=$con->query($SQLse);
+ 
+ var_dump($res);
+ //echo "<pre>";
+ //print_r($res);
+
+ $con->close(); 
 
 
 // MySQLi Pro way 
-$pcon = mysqli_connect($servername,$username,$password,$dbname);
+// $pcon = mysqli_connect($servername,$username,$password,$dbname);
 
-if (!$pcon)
- die("<br> Connection Failed ". mysqli_connect_error());
-else 
- echo "<br> <h2> PRW Alhamdulillah DB Connected";
+// if (!$pcon)
+//  die("<br> Connection Failed ". mysqli_connect_error());
+// else 
+//  echo "<br> <h2> PRW Alhamdulillah DB Connected";
 
 //  $res= mysqli_query($pcon,$sql);
 // if ($res == TRUE)
@@ -53,20 +74,19 @@ else
 
 
 // PDO 
-try
-{
- $pdocon = new PDO("mysql:host=$servername; dbname=$dbname",$username,$password);
- $pdocon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
- echo "<br> PDO CONNECTED";  
-}
-catch(PDOException $e) 
-{
-  echo "<br> PDO Connection ERROR ".$e->getMessage(); 
-}
+// try
+// {
+//  $pdocon = new PDO("mysql:host=$servername; dbname=$dbname",$username,$password);
+//  $pdocon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//  echo "<br> PDO CONNECTED";  
+// }
+// catch(PDOException $e) 
+// {
+//   echo "<br> PDO Connection ERROR ".$e->getMessage(); 
+// }
 
 // $psql = "CREATE DATABASE pdobd"; 
 // $pdocon->query($psql);
 
-$con->close(); 
 
 ?>

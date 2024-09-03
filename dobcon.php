@@ -5,14 +5,14 @@ $password ="";  // STRONG PASS real life
 $dbname ="summer24"; // Different real life 
 
 // OO WAY 
-/*
+
 $conn = new mysqli($servername,$username,$password,$dbname); 
 
 if ($conn->connect_error)
   die("<br>Connection FAILED WITH ERROR <br>".$conn->connect_error); 
 else 
   echo "<br><h1>Yahooooooo... Database Connected</h1>"; 
-*/
+
   
 // PRO WAY 
 /*
@@ -25,7 +25,7 @@ else
 */
 
 // PDO 
-
+/*
 try
 {
  $pdocon = new PDO("mysql:host=$servername; dbname=$dbname",$username,$password);
@@ -36,6 +36,6 @@ catch(PDOException $e)
 {
   echo "<br> PDO Connection ERROR ".$e->getMessage(); 
 }
-
+*/
 
 ?>
