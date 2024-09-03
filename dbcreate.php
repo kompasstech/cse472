@@ -52,9 +52,12 @@ else
  $SQLse = "SELECT * FROM seucse";
  $res=$con->query($SQLse);
  
+ print_r($res);
+ 
  var_dump($res);
  //echo "<pre>";
- //print_r($res);
+ 
+ 
 
  $con->close(); 
 

@@ -1,7 +1,7 @@
 
     <?php
 
-      echo "Welcome CSE 471 <br>";
+      echo "Welcome CSE 471 & CSE472 <br>";
       echo "APP.JS <br>";
       echo "APP.py <br>";
       
