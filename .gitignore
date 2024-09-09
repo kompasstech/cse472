@@ -1,4 +1,4 @@
-# CakePHP 3
+# PHP 8.8
 
 /vendor/*
 /config/app.php
@@ -17,7 +17,7 @@
 /logs/*
 !/logs/empty
 
-# CakePHP 2
+# PHP 
 
 /app/tmp/*
 /app/Config/core.php

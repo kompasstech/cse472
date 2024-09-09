@@ -5,11 +5,11 @@ include 'dobcon.php';
 //DB Operations 
 
 //$SQLup = "UPDATE std2 SET password='iSrAt' where email='youreamil@dot.com"; // Password change like this way
-$SQLup = "UPDATE std2 SET names='iSrAt' where sage=18"; 
+$SQLup = "UPDATE seucse SET names='iSrAt' where sage=18"; 
 $conn->query($SQLup);
 
 // Pulling data from the Database 
-$SQLsw ="SELECT names,sage,addr,bg from std2"; 
+$SQLsw ="SELECT names,sage,addr,bg from seucse"; 
 $res = $conn->query($SQLsw);
 
 //echo $res; 

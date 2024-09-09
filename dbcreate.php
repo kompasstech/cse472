@@ -52,9 +52,34 @@ else
  $SQLse = "SELECT * FROM seucse";
  $res=$con->query($SQLse);
  
- print_r($res);
+ //var_dump($res);
+
+ //$asores = mysqli_fetch_assoc($res);
+ //print_r($asores);
  
- var_dump($res);
+ // LOOP 
+ $i=1;
+ ?>
+ 
+ <?php
+ echo "<table border='1'>";
+ echo "<thead> <tr><th>SL</th><th>NAME</th><th>Age</th><th>Address</th><th>BloodGroup</th></tr></thead";  
+ while ($row = $res->fetch_assoc())
+ {
+    //echo "<br>";
+    //echo $row['names']; 
+    //echo $i.">>". $row['names']."++++".$row['sage']."++++".$row['addr']."++++".$row['bg'];
+    
+    echo "<tr>";
+    echo "<td>".$i."</td><td>".$row['names']."</td><td>".$row['sage']."</td><td>".$row['addr']."<td>".$row['bg']."</td>";
+    echo "</tr>";
+    $i++;
+  }
+  ?>
+  </table>
+
+<?php
+ //var_dump($res);
  //echo "<pre>";
  
  
@@ -69,6 +94,11 @@ else
 //  die("<br> Connection Failed ". mysqli_connect_error());
 // else 
 //  echo "<br> <h2> PRW Alhamdulillah DB Connected";
+
+//  $SQLse = "SELECT * FROM seucse";
+//  $pres=mysqli_query($pcon,$SQLse);
+ 
+//  print_r($pres);
 
 //  $res= mysqli_query($pcon,$sql);
 // if ($res == TRUE)
