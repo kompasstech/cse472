@@ -12,7 +12,7 @@
     <a href="l3.php">Lab3 </a>
     <a href="lt3.php">WED LAB </a>
     <a href="login.php">Login </a>
-    <a href="operations.php">Dif Operations</a>     
+    <a href="operations.php">Operations</a>     
 </div> 
 
 <h1 style="background-color:Tomato;">Welcome to PHP INDEX PAGE </h1>
