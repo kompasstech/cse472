@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost";
+$servername = "localhost:3307";
 $username = "root"; // Different in real life
 $password ="";  // STRONG PASS real life 
 $dbname ="summer24"; // Different real life 
