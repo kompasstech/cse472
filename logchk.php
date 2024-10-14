@@ -22,14 +22,14 @@ echo "<br>".date('Y-m-d h:i:s a') ;
 if (($un == 'yahoo') && ($pa =='YAHOO'))
   { 
     echo "<br><h4 style='background-color:green'>Successfull Login</h4>";
-    header("Location: http://localhost/cse4034/p1.php"); 
+    header("Location: http://localhost/cse472/p1.php"); 
   }  
 
 elseif ($un == 'google' && $pa == 'GOOGLE')
   {
   echo "<br> <h4 style='background-color:green'> Successful Login </h4>";
   echo "<script type='text/javascript'> 
-          window.location.href='http://localhost/cse4034/p2.php'
+          window.location.href='http://localhost/cse472/p2.php'
   </script>"; 
   }
 elseif ($un == 'bing' && $pa == 'BING')
@@ -38,6 +38,6 @@ else
   {
     echo "<br><h4 style='background-color:red'>Wrong Username or Password</h4>";
     $_SESSION["wup"]="Wrong User Name or Password";  
-    header("Location: http://localhost/cse4034");
+    header("Location: http://localhost/cse472");
   } 
 

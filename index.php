@@ -2,6 +2,7 @@
     <?php
 
       echo "Welcome CSE 471 & CSE472 <br>";
+      echo "INDEX.php";
       echo "APP.JS <br>";
       echo "APP.py <br>";
       
